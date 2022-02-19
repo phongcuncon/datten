@@ -1,0 +1,358 @@
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+body,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+figure,
+picture {
+  margin: 0;
+}
+body {
+  min-height: 100vh;
+  line-height: 1.5;
+}
+input,
+select,
+textarea {
+  font: inherit;
+}
+img,
+picture {
+  display: block;
+  max-width: 100%;
+}
+/* remove animation for people who've turned them off */
+@media (prefers-reduced-motion: reduce) {
+  *,
+  *::before,
+  *::after {
+    animation-duration: 0.01ms !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: 0.01ms !important;
+    scroll-behavior: auto !important;
+  }
+}
+/* --------------------- đừng xóa -------------------------------- */
+* {
+  padding: 0;
+  margin: 0;
+  font-family: "Roboto", sans-serif;
+}
+
+.container {
+  width: 100px;
+  margin: 0 auto;
+}
+
+header {
+  padding: 50px;
+  padding-left: 50px;
+  color: rgb(255, 255, 255);
+  width: 100%;
+  height: 150px;
+  background: url(/hinhanh/netflix.jpg) ;
+  background-size: cover;
+  background-position: center;
+  
+}
+header>h1{
+  color: rgb(184, 24, 24);
+}
+header>h2 {
+  padding: 2px;
+  background-color: rgba(21, 21, 212, 0.2);
+  width: max-content;
+  text-align: center;
+  line-height: 100%;
+  color: rgb(255, 255, 255);
+  font-family: 'Dancing Script', cursive;
+  font-size: 30px;
+}
+
+.menu {
+  
+  width: 100%;
+  height: 35px;
+  text-align: left;
+  background: black;
+ text-align: center;
+}
+
+ul.root > li{
+  
+  list-style: none;
+  float: left;
+  position: relative;
+}
+ul.root > li > a{
+  text-decoration: none;
+  color: white;
+  padding: 0px 30px ;
+  line-height: 35px;
+  display: block;
+}
+ul.root > li > a:hover{
+  background: rgba(56, 55, 55,0.8);
+  color: black;
+  transition: ease-in 0.35s;
+  -moz-transition: ease-in 0.35s;
+  -webkit-transition: ease-in 0.35s;
+}
+ul.submenu {
+  width: 200px;
+  background: rgba(82, 80, 80, 0.5);
+  min-height: 140px;
+  display: none;
+  position: absolute;
+}
+ul.submenu li {
+  list-style: none;
+}
+ul.submenu li a{
+  color: white;
+  text-decoration: none;
+  display: block;
+  /* border-top: 2px solid rgb(46, 28, 87); */
+  line-height: 40px;
+  
+}
+ul.submenu li a:hover{
+  background: rgb(112, 111, 111);
+  color: rgb(236, 82, 11);
+  font-weight: 800;
+  transition: ease-in 0.35s;
+  -moz-transition: ease-in 0.35s;
+  -webkit-transition: ease-in 0.35s
+}
+ul.root > li:hover ul.submenu{
+  display: block;
+  z-index: 9999;
+}
+.search{
+  margin: 0px;
+  display: block;
+  box-sizing: content-box;
+  color: rgb(248, 242, 242);
+  font-size: 14px;
+  line-height: 20px;
+  position: relative;
+  float: right;
+}
+.search .seach-icons{
+    position: relative;
+    right: 5px;
+    top: 7px;
+    font-size: 17px;
+    color: #c22d4d;
+    display:inline-block;
+    box-sizing: content-box;
+
+}
+.search-txt{
+    padding: 0 5px;
+    position: absolute;
+    right: 0px;
+    top: 5px;
+    font-size: 20px;
+    color: white;
+    display:inline-block;
+    box-sizing: content-box;
+    border: none;
+    border-radius: 7px;
+    background-color: rgb(22, 15, 15) ;
+    font-weight:300;
+}
+.search-txt:hover{
+  border: none;
+}
+
+
+
+
+/* Dân An */
+/* Thanh Tùng */
+.sidebar{
+    background-color: #aa5656;
+    width: 18%; 
+    height: auto;
+    margin: auto 0px;
+    position:absolute;
+    padding: auto;
+    display: flex;
+    flex-direction: column;
+    overflow: hidden;
+    text-align: center;
+    
+  }
+.list-top{
+  color :rgb(0, 2, 2)
+}  
+.list-top-movie{
+  background-color: rgb(8, 8, 6, 0.5 );
+  clear:both;
+  overflow: hidden;
+  display :block ;
+}
+.list-top-img{
+  padding: 20px;
+  width: 200px;
+  height: 300px;
+  box-sizing: block;
+  display: block;
+  margin: 0 auto;
+  
+}
+.list-top-movie-item-name{
+  line-height: initial;
+  font-weight: bold;
+  font-size: 20px;
+}
+.list-top-item-view{
+  line-height: initial;
+}
+
+/**/
+/**/
+
+  
+/* Thanh Tùng */
+/* phong-Nam */
+
+.main-content{
+  float: right;
+  width: 82%;
+  background-color: rgba(12, 7, 7, 1);
+  height: 100%;
+  margin-right: 0px;
+}
+
+
+.list-film{
+  margin:  5px 0px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.catergory{
+  margin-left: 20px;
+  margin-top: 5px;
+  font-weight: bold;
+  background-attachment: fixed;
+  letter-spacing: 1px;
+  font-size: 24px;
+}
+.catergory_list-film{
+  margin: 20px;
+  float:left;
+}
+.catergory_list-film--img{
+  width: 200px;
+  height: 300px;
+  text-align:center;
+  margin: 0 auto;;
+  position: relative;
+  margin-block-start: 0%;
+}
+.list-film{
+  left: 5px;
+  display: flex;
+  width: 100% ;
+  height: auto  ;
+  flex-shrink: 0;
+  object-fit: fill;
+}
+.catergory_list-film>p{
+  font-weight: bolder;
+  text-align: center;
+  font-size: 15px;
+  background-color: gray;
+  color: orange;
+}
+.catergory_list-film>button{
+  width: 100%;
+  background: black;
+  border: none;
+  color: red;
+  font-weight: bold;
+  cursor: pointer;
+}
+.catergory_list-film>desc{
+  font-size: 5px;
+  color: aliceblue;
+  background-color: none;
+}
+.feature-content{
+  height: 80vh;
+  padding: 50px;
+  object-fit: fill;
+}
+.feature-title{
+  font-family: 'Dongle', sans-serif;
+  flex: right;
+  margin-block-start: 0%;
+  width: 200px;
+  max-height: 600px;
+  margin-bottom: 0px;
+}
+.feature-desc{
+  margin: 5px;
+  padding: 2px;
+  color: aliceblue;
+  width: 500px;
+  font-size: 20px;
+}
+.special{
+  margin: 5px;
+  padding: 2px;
+  color: aliceblue;
+  width: 500px;
+  font-size: 18px;
+
+}
+.special>strong{
+  color: gray;
+  text-decoration: red;
+}
+.feature-button{
+  padding: 10px;
+  margin: 5px;
+  background: rgba(128, 128 ,128, 0.05 );
+  border: none;
+  font-size: 14px;
+  
+  cursor: pointer;
+  color: red;
+  font-weight: bold;
+}
+.icons{
+  size: 30px;
+
+}
+
+.footer{
+  min-height: 20vh;
+  width: 100%;
+  clear: both;
+  background-color: #213342;
+  margin-top: 0px;
+  padding: 20px 25px 15px;
+  border-top: 3px solid rgb(252, 235, 1) ;
+  color: yellowgreen;
+  text-align: center;
+}
+.container-footer{
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+  
+}
+
+
+
+/* phong-Nam */

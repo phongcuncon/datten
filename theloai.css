@@ -1,0 +1,245 @@
+
+*, *::before, *::after {
+  box-sizing: border-box;
+}
+* {
+  margin: 0;
+}
+
+html, body {
+  height: 100%;
+  width: 100%;
+}
+body {
+  line-height: 1.5;
+  -webkit-font-smoothing: antialiased;
+  -webkit-tap-highlight-color: rgba(0,0,0,0);
+}
+
+img, picture, video, canvas, svg {
+  display: block;
+  max-width: 100%;
+}
+input, button, textarea, select {
+  font: inherit;
+  outline: none;
+  border: none;
+}
+p, h1, h2, h3, h4, h5, h6 {
+  overflow-wrap: break-word;
+}
+
+.main-content{
+    /*float: right;*/
+    
+    background-color: rgba(12, 7, 7, 1);
+    
+    margin: 0;
+}
+* {
+  padding: 0;
+  margin: 0;
+  font-family: "Roboto", sans-serif;
+}
+
+
+.menu {
+  
+  width: 100%;
+  height: 35px;
+  text-align: left;
+  background: black;
+ text-align: center;
+}
+
+ul.root > li{
+  
+  list-style: none;
+  float: left;
+  position: relative;
+}
+ul.root > li > a{
+  text-decoration: none;
+  color: white;
+  padding: 0px 30px ;
+  line-height: 35px;
+  display: block;
+}
+ul.root > li > a:hover{
+  background: rgba(56, 55, 55,0.8);
+  color: black;
+  transition: ease-in 0.35s;
+  -moz-transition: ease-in 0.35s;
+  -webkit-transition: ease-in 0.35s;
+}
+ul.submenu {
+  width: 200px;
+  background: rgba(82, 80, 80, 0.5);
+  min-height: 140px;
+  display: none;
+  position: absolute;
+}
+ul.submenu li {
+  list-style: none;
+}
+ul.submenu li a{
+  color: white;
+  text-decoration: none;
+  display: block;
+  /* border-top: 2px solid rgb(46, 28, 87); */
+  line-height: 40px;
+  
+}
+ul.submenu li a:hover{
+  background: rgb(112, 111, 111);
+  color: rgb(236, 82, 11);
+  font-weight: 800;
+  transition: ease-in 0.35s;
+  -moz-transition: ease-in 0.35s;
+  -webkit-transition: ease-in 0.35s
+}
+ul.root > li:hover ul.submenu{
+  display: block;
+  z-index: 9999;
+}
+.search{
+  margin: 0px;
+  display: block;
+  box-sizing: content-box;
+  color: rgb(248, 242, 242);
+  font-size: 14px;
+  line-height: 20px;
+  position: relative;
+  float: right;
+}
+.search .seach-icons{
+    position: relative;
+    right: 5px;
+    top: 7px;
+    font-size: 17px;
+    color: #c22d4d;
+    display:inline-block;
+    box-sizing: content-box;
+
+}
+.search-txt{
+    padding: 0 5px;
+    position: absolute;
+    right: 0px;
+    top: 5px;
+    font-size: 20px;
+    color: white;
+    display:inline-block;
+    box-sizing: content-box;
+    border: none;
+    border-radius: 7px;
+    background-color: rgb(22, 15, 15) ;
+    font-weight:300;
+}
+.search-txt:hover{
+  border: none;
+}
+
+
+  /* ------nam------- */
+  .movie-list{
+    margin:  5px 0px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+  .movie-list-title{
+    margin: 10px;
+    color: aliceblue;
+}
+.movie-list-items{
+    margin-right: 20px;
+    margin-bottom: 30px;
+    display: inline-flex;
+    position: relative;
+    
+}
+.movie-list-container{
+    padding: 0 0 0 20px;
+}
+.movie-list-items-img{
+    transition: all 0.4s ease-in-out;/*di ảnh poster lên */
+    width: 200px;
+    height: 300px;
+    object-fit: cover; 
+    flex-shrink: 0;
+    
+    /* ------- */
+    
+    /* width: 200px;
+    height: 300px;
+    text-align:center;
+    margin: 0 auto;
+    position: relative;
+    margin-block-start: 0%; */
+}
+/* Phóng to poster của phim. */
+.movie-list-items:hover .movie-list-items-img{
+    transform: scale(1.2);
+    margin: 0 20px;
+    opacity: 0.6;
+}
+.movie-list-items-title{
+background-color: #333;
+padding: 0 30px;
+font-size: 20px;
+font-weight: bold;
+position: absolute;
+top: 10%;
+left: 20px;
+transition: 1s all ease-in-out;
+opacity: 0;/* làm hiện lên  */
+color: white;
+}
+.movie-list-items:hover .movie-list-items-title{
+opacity: 1;
+}
+.movie-list-items-desc{
+overflow:initial;
+padding:  10px;
+font-size: 14px;
+font-weight: bold;
+position: absolute;
+top: 30%;
+left: 20px;
+width: 200px;
+height: 100px;
+transition: 1s all ease-in-out;
+opacity: 0;
+color: white;
+}
+.movie-list-items:hover .movie-list-items-desc{
+opacity: 1;
+}
+.movie-list-items-button{
+    padding: 10px;
+    background-color: gray;
+    border: 10px;
+    outline: none;
+    cursor: pointer;
+    position: absolute;
+    bottom: 10px;
+    left: 20px;
+    color: tomato;
+    font-weight: bold;
+    opacity: 0;
+    transition: 1s all ease-in-out;
+    
+    
+}
+.movie-list-items:hover .movie-list-items-button{
+opacity: 1;
+
+}   
+.left-list1 {
+    left: 5px;
+    color: white;
+    font-size: 30px;
+    margin-bottom: auto;
+}
