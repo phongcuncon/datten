@@ -37,7 +37,7 @@ body{
     z-index: 10;
 }
 .login{
-    background-image: url(./hinhanh/background-login.jpg);
+    background-image: url(../hinhanh/background-login.jpg);
     width: 100%;
     padding-top: 30px;
     height: 100%;
