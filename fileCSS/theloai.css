@@ -29,11 +29,8 @@ p, h1, h2, h3, h4, h5, h6 {
   overflow-wrap: break-word;
 }
 
-.main-content{
-    /*float: right;*/
-    
-    background-color: rgba(12, 7, 7, 1);
-    
+.main-content{  
+    background-color: rgba(12, 7, 7, 1);   
     margin: 0;
 }
 * {
@@ -41,8 +38,6 @@ p, h1, h2, h3, h4, h5, h6 {
   margin: 0;
   font-family: "Roboto", sans-serif;
 }
-
-
 .menu {
   
   width: 100%;
@@ -51,7 +46,6 @@ p, h1, h2, h3, h4, h5, h6 {
   background: black;
  text-align: center;
 }
-
 ul.root > li{
   
   list-style: none;
@@ -86,9 +80,7 @@ ul.submenu li a{
   color: white;
   text-decoration: none;
   display: block;
-  /* border-top: 2px solid rgb(46, 28, 87); */
   line-height: 40px;
-  
 }
 ul.submenu li a:hover{
   background: rgb(112, 111, 111);
@@ -120,7 +112,6 @@ ul.root > li:hover ul.submenu{
     color: #c22d4d;
     display:inline-block;
     box-sizing: content-box;
-
 }
 .search-txt{
     padding: 0 5px;
@@ -139,16 +130,12 @@ ul.root > li:hover ul.submenu{
 .search-txt:hover{
   border: none;
 }
-
-
-  /* ------nam------- */
   .movie-list{
     margin:  5px 0px;
     display: flex;
     justify-content: center;
     align-items: center;
 }
-
   .movie-list-title{
     margin: 10px;
     color: aliceblue;
@@ -169,15 +156,6 @@ ul.root > li:hover ul.submenu{
     height: 300px;
     object-fit: cover; 
     flex-shrink: 0;
-    
-    /* ------- */
-    
-    /* width: 200px;
-    height: 300px;
-    text-align:center;
-    margin: 0 auto;
-    position: relative;
-    margin-block-start: 0%; */
 }
 /* Phóng to poster của phim. */
 .movie-list-items:hover .movie-list-items-img{

@@ -66,16 +66,6 @@ header {
 header>h1{
   color: rgb(232, 30, 30);
 }
-/* header>h2 {
-  padding: 2px;
-  background-color: rgba(21, 21, 212, 0.2);
-  width: max-content;
-  text-align: center;
-  line-height: 100%;
-  color: rgb(255, 255, 255);
-  font-family: 'Dancing Script', cursive;
-  font-size: 30px;
-} */
 
 .menu {
   
@@ -174,11 +164,6 @@ ul.root > li:hover ul.submenu{
   border: none;
 }
 
-
-
-
-/* Dân An */
-/* Thanh Tùng */
 .sidebar{
     background-color: #aa5656;
     width: 18%; 
@@ -218,13 +203,6 @@ ul.root > li:hover ul.submenu{
 .list-top-item-view{
   line-height: initial;
 }
-
-/**/
-/**/
-
-  
-/* Thanh Tùng */
-/* phong-Nam */
 
 .main-content{
   float: right;
