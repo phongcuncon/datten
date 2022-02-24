@@ -24,6 +24,18 @@ select,
 textarea {
   font: inherit;
 }
+body::-webkit-scrollbar{
+  width: 10px;
+}
+body::-webkit-scrollbar-thumb{
+  height: 30px;
+  border-radius: 100rem;
+  background-color: #8d0316;
+}
+body::-webkit-scrollbar-track{
+  background-image:linear-gradient(to bottom, black ,rgb(128, 1, 1) );;
+  
+}
 img,
 picture {
   display: block;

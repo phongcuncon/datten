@@ -31,6 +31,18 @@ p, h1, h2, h3, h4, h5, h6 {
   margin: 0;
   font-family: "Roboto", sans-serif;
 }
+body::-webkit-scrollbar{
+  width: 10px;
+}
+body::-webkit-scrollbar-thumb{
+  height: 30px;
+  border-radius: 100rem;
+  background-color: #8d0316;
+}
+body::-webkit-scrollbar-track{
+  background-image:linear-gradient(to bottom, black ,rgb(128, 1, 1) );;
+  
+}
 body{
     
     margin: 0;
