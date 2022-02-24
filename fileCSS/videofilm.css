@@ -180,6 +180,10 @@ video{
   font-size: 20px;
   margin: 0px 2px;
 }
+i{
+  font-size: 20px;
+  margin: 3px;
+}
 
 .footer{
   min-height: 20vh;
