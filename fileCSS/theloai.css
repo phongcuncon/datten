@@ -147,6 +147,14 @@ ul.root > li:hover ul.submenu{
     position: relative;
     
 }
+.movie-list-title{
+  color:rgb(177, 9, 9);
+  font-weight: 900;
+  font-size: 30px;
+  border-bottom: 5px solid;
+  border-image-slice: 1;
+  border-image-source: linear-gradient(to right bottom,#ffa400,#ff6bcb);
+}
 .movie-list-container{
     padding: 0 0 0 20px;
 }

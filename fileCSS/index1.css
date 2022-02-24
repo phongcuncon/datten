@@ -226,6 +226,11 @@ ul.root > li:hover ul.submenu{
   background-attachment: fixed;
   letter-spacing: 1px;
   font-size: 24px;
+  padding: 3px;
+  border-bottom: 3px solid ;
+  border-image-slice: 1;
+  border-image-source: linear-gradient(to right bottom,#ffa400,#ff6bcb);
+
 }
 .catergory_list-film{
   margin: 20px;
