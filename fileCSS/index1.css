@@ -177,7 +177,7 @@ ul.root > li:hover ul.submenu{
 }
 
 .sidebar{
-    background-color: #aa5656;
+    background-color: #0a0000;
     width: 18%; 
     height: auto;
     margin: auto 0px;
@@ -187,13 +187,27 @@ ul.root > li:hover ul.submenu{
     flex-direction: column;
     overflow: hidden;
     text-align: center;
-    
+    color :rgb(203, 247, 246);}
   }
 .list-top{
-  color :rgb(0, 2, 2)
-}  
+  color :rgb(203, 247, 246);}
+
+.list-top-movie-item{
+    
+    margin: 20px 3px;
+    padding: 15px;
+    border-radius: 20px;
+    
+  }
+.list-top-movie-item-child{
+    background-color: #0a0000;
+    width: 100%;
+    height: 100%;
+    border-radius: 10px;
+  }
+
 .list-top-movie{
-  background-color: rgb(8, 8, 6, 0.5 );
+  background-color: #0a0000;
   clear:both;
   overflow: hidden;
   display :block ;
@@ -214,6 +228,7 @@ ul.root > li:hover ul.submenu{
 }
 .list-top-item-view{
   line-height: initial;
+  
 }
 
 .main-content{
